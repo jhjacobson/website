@@ -1,8 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Glegoo);
 
-.nav {
+.header {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+}
+
+header .nav {
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
@@ -17,25 +21,31 @@
 
 .nav-list {
     display: flex;
-    margin-right: 2rem;
+    margin: 0 0 0 auto;
     list-style: none;
 }
 
 .nav-list a {
     display: block;
-    font-size: 2.2rem;
+    font-size: 3.2rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
+.nav-list a:hover{
+    background-color: #699793;
+    border-color: black;
+    border-left: 10px;
+}
+
 .headshot {
     border-radius: 50%;
-    width:5%;
-    height:5%;
+    width:5vh;
+    height:5vh;
     z-index: 1;
     position: relative;
     left: 10px;
-    top: -65px;
+    top: 2px;
     border-color: white;
     box-shadow: 0 0 0.8rem rgba(0,0,0,0.9);
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
@@ -43,25 +53,24 @@
 }
 
 body {
+    margin-top: 4rem;
+    margin-bottom: 6rem;
     background-color: rgba(69,97,93,0.15);
 }
 
 p {
-    margin-left: 30rem;
-    margin-right: 30rem;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    font-size: 2vh
 }
-
-/* .footer a:hover {
-    text-decoration: underline;
-    margin-bottom: 3rem;
-} */
 
 .footer{
     bottom: 0;
     position: fixed;
     width: 110%;
-    background-color: rgba(69,97,93,0.6);
+    background-color: rgba(69,97,93);
     margin-left: -0.5%;
+    color: white;
 }
 
 .footer ul {
@@ -70,7 +79,7 @@ p {
 
 .footer a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .footer li{
