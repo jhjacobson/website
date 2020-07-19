@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Glegoo);
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg,#699793, #4e8f89 50%, #3c8f86 100%); 
+    z-index: 0;
+    border-bottom-color: black;
+    border-bottom-width: 100em; 
+    font-family: 'Glegoo';
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+    list-style: none;
+}
+
+.nav-list a {
+    display: block;
+    font-size: 2.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.headshot {
+    border-radius: 50%;
+    width:5%;
+    height:5%;
+    z-index: 1;
+    position: relative;
+    left: 10px;
+    top: -65px;
+    border-color: white;
+    box-shadow: 0 0 0.8rem rgba(0,0,0,0.9);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+body {
+    background-color: rgba(69,97,93,0.15);
+}
+
+p {
+    margin-left: 30rem;
+    margin-right: 30rem;
+}
+
+/* .footer a:hover {
+    text-decoration: underline;
+    margin-bottom: 3rem;
+} */
+
+.footer{
+    bottom: 0;
+    position: fixed;
+    width: 110%;
+    background-color: rgba(69,97,93,0.6);
+    margin-left: -0.5%;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer li{
+    float: left;
+    padding: 0rem;
+    margin-bottom: 1rem;
+    margin-left: 0rem;
+    margin-right: 2.5rem;
+    font-family: 'Glegoo';
+    font-size: 1.4rem;
+}
+
+.footer li:hover{
+    text-decoration: underline;
+}
