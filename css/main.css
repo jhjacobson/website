@@ -1,9 +1,17 @@
+/* TO DO: Fix The navbar and footer for Moto G4 while using the contact form */
+
 @import url(https://fonts.googleapis.com/css?family=Glegoo);
 @import url(https://fonts.googleapis.com/css?family=Arvo);
 
 #header {
     display: flex;
     flex-direction: row;
+}
+
+#contactForm {
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
 
 #header .nav {
@@ -20,14 +28,20 @@
     font-family: 'Glegoo';
 }
 
-
 .nav-list {
     display: flex;
-    margin: 0 0 0 auto;
+    margin: 0 0 0 0;
     list-style: none;
 }
 
-
+.nav-list a {
+    display: block;
+    font-size: 6vw;
+    padding-left: 3vw;
+    padding-right: 2vw;
+    text-decoration: none;
+    color:black;
+}
 
 .nav-list a:hover{
     background-color: #699793;
@@ -49,38 +63,21 @@
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 
+#content {
+    flex: 1;
+    overflow: auto;
+    margin-top: 5em;
+    margin-bottom: 10em;
+    margin-left: 0.1vw;
+    margin-right: 0.1vw;
+}
 
-@media only screen and (max-width: 850px) {
-    #content {
-        margin-top: 5em;
-        margin-bottom: 10em;
-        margin-left: 0.1vw;
-        margin-right: 0.1vw;
-    }
-
-    .nav-list a {
-        display: block;
-        font-size: 6vw;
-        padding-left: 3vw;
-        padding-right: 2vw;
-        text-decoration: none;
-        color:black;
-    }
-
-    #footer{
-        margin-left: -4%;
-        width: 130%;
-    }
-
-    #footer li{
-        float: left;
-        padding: 0rem;
-        margin-bottom: 1vw;
-        margin-left: -4vw;
-        margin-right: 10vw;
-        font-family: 'Glegoo';
-        font-size: 5vw;
-    }
+#footer li{
+    float: left;
+    margin-bottom: 1vw;
+    margin-right: 6vw;
+    font-family: 'Glegoo';
+    font-size: 5vw;
 }
 
 @media only screen and (min-width: 850px) {
@@ -93,28 +90,22 @@
     }
 
     .nav-list a {
-        display: block;
-        font-size: 2.3rem;
+        font-size: 2.4rem;
         padding-left: 1rem;
         padding-right: 1rem;
-        text-decoration: none;
-        color:black;
     }
 
     #footer li{
-        float: left;
-        padding: 0rem;
         margin-bottom: 1rem;
         margin-left: 0rem;
         margin-right: 2.5rem;
-        font-family: 'Glegoo';
         font-size: 1.4rem;
     }
 
-    #footer {
-        margin-left: -0.5%;
-        width: 110%;
+    .nav-list {
+        margin: 0 0 0 auto;
     }
+
 }
 
 @media only screen and (orientation: landscape) and (max-width: 850px) {
@@ -131,26 +122,14 @@
     }
 
     .nav-list a {
-        display: block;
         font-size: 4vw;
         padding-left: 3vw;
         padding-right: 2vw;
-        text-decoration: none;
-        color:black;
-    }
-
-    #footer{
-        margin-left: -4%;
-        width: 150%;
     }
 
     #footer li{
-        float: left;
-        padding: 0rem;
         margin-bottom: 1vw;
-        margin-left: -2vw;
         margin-right: 10vw;
-        font-family: 'Glegoo';
         font-size: 3vw;
     }
 }
@@ -164,10 +143,16 @@
     border-style: solid;
     border-width: 0.01em;
     border-color: black;
+    padding-bottom: 1em;
+    padding-top: 1em;
 }
+
 
 body {
     background-color: rgba(69,97,93,0.15);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 h1 {
@@ -178,6 +163,8 @@ h1 {
 
 #footer{
     bottom: 0;
+    left: 0;
+    width: 100%;
     position: fixed;
     background-color: rgba(69,97,93);
     color: white;
@@ -192,6 +179,11 @@ h1 {
     color: white;
 }
 
+
 #footer li:hover{
+    text-decoration: underline;
+}
+
+.nav-list .current-page {
     text-decoration: underline;
 }
