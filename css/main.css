@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Glegoo);
 @import url(https://fonts.googleapis.com/css?family=Arvo);
-
 #header {
     display: flex;
     flex-direction: row;
@@ -18,11 +17,11 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg,#699793, #4e8f89 50%, #3c8f86 100%); 
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, #699793, #4e8f89 50%, #3c8f86 100%);
     z-index: 0;
     border-bottom-color: black;
-    border-bottom-width: 100em; 
+    border-bottom-width: 100em;
     font-family: 'Glegoo';
 }
 
@@ -38,10 +37,10 @@
     padding-left: 3vw;
     padding-right: 2vw;
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
-.nav-list a:hover{
+.nav-list a:hover {
     background-color: #699793;
     border-color: black;
     border-left: 10px;
@@ -49,20 +48,21 @@
 
 .headshot {
     border-radius: 50%;
-    width:6vh;
-    height:6vh;
+    width: 6vh;
+    height: 6vh;
     z-index: 1;
     position: relative;
     left: 10px;
     top: 2px;
     border-color: white;
-    box-shadow: 0 0 0.8rem rgba(0,0,0,0.9);
+    box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.9);
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 
 #content {
     flex: 1;
+    font-family: Calibri;
     overflow: auto;
     margin-top: 5em;
     margin-bottom: 10em;
@@ -70,12 +70,18 @@
     margin-right: 0.1vw;
 }
 
-#footer li{
+#footer li {
     float: left;
     margin-bottom: 1vw;
     margin-right: 6vw;
     font-family: 'Glegoo';
     font-size: 5vw;
+}
+
+.positionDates {
+    margin-top: -3vh;
+    margin-left: 1vw;
+    font-style: italic;
 }
 
 @media only screen and (min-width: 850px) {
@@ -86,24 +92,20 @@
         margin-right: 20vw;
         font-size: 2.5vh
     }
-
     .nav-list a {
         font-size: 2.4rem;
         padding-left: 1rem;
         padding-right: 1rem;
     }
-
-    #footer li{
+    #footer li {
         margin-bottom: 1rem;
         margin-left: 0rem;
         margin-right: 2.5rem;
         font-size: 1.4rem;
     }
-
     .nav-list {
         margin: 0 0 0 auto;
     }
-
 }
 
 @media only screen and (orientation: landscape) and (max-width: 850px) {
@@ -113,19 +115,16 @@
         margin-left: 0.1vw;
         margin-right: 0.1vw;
     }
-
     .headshot {
-        width:6vw;
-        height:6vw;
+        width: 6vw;
+        height: 6vw;
     }
-
     .nav-list a {
         font-size: 4vw;
         padding-left: 3vw;
         padding-right: 2vw;
     }
-
-    #footer li{
+    #footer li {
         margin-bottom: 1vw;
         margin-right: 10vw;
         font-size: 3vw;
@@ -145,9 +144,8 @@
     padding-top: 1em;
 }
 
-
 body {
-    background-color: rgba(69,97,93,0.15);
+    background-color: rgba(69, 97, 93, 0.15);
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -159,12 +157,12 @@ h1 {
     letter-spacing: 0.01em;
 }
 
-#footer{
+#footer {
     bottom: 0;
     left: 0;
     width: 100%;
     position: fixed;
-    background-color: rgba(69,97,93);
+    background-color: rgba(69, 97, 93);
     color: white;
 }
 
@@ -177,8 +175,7 @@ h1 {
     color: white;
 }
 
-
-#footer li:hover{
+#footer li:hover {
     text-decoration: underline;
 }
 
