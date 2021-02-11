@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Glegoo);
 @import url(https://fonts.googleapis.com/css?family=Arvo);
-#header {
+header {
     display: flex;
     flex-direction: row;
 }
@@ -11,7 +11,7 @@
     margin-bottom: 5em;
 }
 
-#header .nav {
+nav {
     display: flex;
     position: fixed;
     top: 0;
@@ -60,7 +60,7 @@
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 
-#content {
+article {
     flex: 1;
     font-family: Calibri;
     overflow: auto;
@@ -70,7 +70,7 @@
     margin-right: 0.1vw;
 }
 
-#footer li {
+footer li {
     float: left;
     margin-bottom: 1vw;
     margin-right: 6vw;
@@ -79,13 +79,13 @@
 }
 
 .positionDates {
-    margin-top: -3vh;
-    margin-left: 1vw;
+    margin: -3vh auto -1vh 1vw;
     font-style: italic;
+    font-weight: 400;
 }
 
 @media only screen and (min-width: 850px) {
-    #content {
+    article {
         margin-top: 8em;
         margin-bottom: 10em;
         margin-left: 20vw;
@@ -97,7 +97,7 @@
         padding-left: 1rem;
         padding-right: 1rem;
     }
-    #footer li {
+    footer li {
         margin-bottom: 1rem;
         margin-left: 0rem;
         margin-right: 2.5rem;
@@ -109,7 +109,7 @@
 }
 
 @media only screen and (orientation: landscape) and (max-width: 850px) {
-    #content {
+    article {
         margin-top: 5em;
         margin-bottom: 10em;
         margin-left: 0.1vw;
@@ -124,7 +124,7 @@
         padding-left: 3vw;
         padding-right: 2vw;
     }
-    #footer li {
+    footer li {
         margin-bottom: 1vw;
         margin-right: 10vw;
         font-size: 3vw;
@@ -157,7 +157,7 @@ h1 {
     letter-spacing: 0.01em;
 }
 
-#footer {
+footer {
     bottom: 0;
     left: 0;
     width: 100%;
@@ -166,16 +166,16 @@ h1 {
     color: white;
 }
 
-#footer ul {
+footer ul {
     list-style: none;
 }
 
-#footer a {
+footer a {
     text-decoration: none;
     color: white;
 }
 
-#footer li:hover {
+footer li:hover {
     text-decoration: underline;
 }
 
